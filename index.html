@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>viewSlide</title>
+    <link rel="stylesheet" href="css/viewSlide.css">
+    <script src="js/viewSlide.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="viewSlide">
+            <div class="view-container">
+                <div class="view-slide">slide 1</div>
+                <div class="view-slide">slide 2</div>
+                <div class="view-slide">slide 3</div>
+                <div class="view-slide">slide 4</div>
+            </div>
+            <div class="arrow">
+                <i class='arrowLeft iconfont'></i>
+                <i class='arrowRight iconfont'></i>
+            </div>
+            <div class="view-pagination"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="js/index.js"></script>
+<script>
+    var obj = {
+    direction: 'top',
+    loop:true,
+    pagination: true,
+    arrow: true,
+    autoPlay: true,
+    speed: 50,
+    autoPlayTime: 3000
+
+
+
+}
+var viewSlide = document.querySelector('.viewSlide');
+
+//进行初始化
+var myViewSlide = new ViewSlide(viewSlide, obj);
+
+</script>
